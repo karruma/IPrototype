@@ -22,7 +22,7 @@ img {
 
 .tile-fishing {
     height: 100px;
-    margin: 3px;
+    margin: 10px;
     border-radius: 4px;
     background-color: #56D9C9;
 }
@@ -35,7 +35,7 @@ img {
 }
 
 .tile-fishing p {
-    font-size: 1.3em
+    font-size: 2em
 }
 
 .tile-gear {
@@ -54,7 +54,7 @@ img {
 }
 
 .tile-gear p {
-    font-size: 1.3em
+    font-size: 2em
 }
 
 .tile-gear:hover {
@@ -76,7 +76,6 @@ img {
     height: 100px;
     margin: 3px;
     border-radius: 4px;
-    /*background-color: #3EC7F3;*/
     color: white
 }
 
@@ -146,7 +145,8 @@ img {
 
 .tile {
     float: left;
-    margin: 0 auto 1%;
+    /*margin: 0 auto 1%;*/
+    margin: 1%;
     color: white;
     font-size: 1.3em;
     text-align: center;
@@ -269,7 +269,7 @@ img {
     transform: rotateX( 180deg )
 }
 
-.tile div div {
+.tile div {
     position: absolute;
     top: 0;
     left: 0;
@@ -279,8 +279,37 @@ img {
     height: 100%;
     text-align: center;
     display: table;
-    padding: 0 1em;
+    /*padding: 0 1em;*/
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease
+}
+
+.tile-carousel1 {
+    height: 230px;
+    width: 20%;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #56D9C9;
+}
+
+.tile-carousel2 {
+    height: 230px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #d97615;
+}
+
+.tile-carousel3 {
+    height: 230px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #cbd96e;
+}
+
+.tile-carousel4 {
+    height: 230px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #d99179;
 }
