@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IPrototype Template</title>
+    <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,44 +15,72 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/carousel.js"></script>
     <![endif]-->
 </head>
 <body>
-
-<div class="row main-menu wrapper">
-    <div class="dashboard tile">
-        <div class="col-md-3  tile-map rotate3d rotate3dX">
+<div class="dashboard">
+    <div class="row main-menu">
+        <div class="col-md-3 tile tile-map rotate3d rotate3dX">
             <div class="faces">
-                <div class="front">
-                    <p>Map</p>
-                </div >
-                <div class="back">
-                    <p>Check your routes</p>
-                </div>
+                <div class="front"><p>Map</p></div>
+                <div class="back"><p>Check were you are!</p></div>
             </div>
         </div>
-        <div class="col-md-3 tile-fishing slideTextUp">
-            <div>
-                <p>Start</p>
-            </div>
+        <div class="col-md-3 tile tile-fishing slideTextUp">
+            <div><p>Start</p></div>
             <div><p>Fishing</p></div>
         </div>
-        <div class="col-md-3 tile-gear">
-            <div>
-                <p>Gear</p>
-            </div>
+        <div class="col-md-3 tile tile-gear">
+            <div><p>Gear</p></div>
         </div>
         <div class="col-md-3">
-            <!--<div>
-                <p>Map</p>
-            </div>-->
+
         </div>
     </div>
-</div>
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-3 tile-carousel1"></div>
+                        <div class="col-xs-3 tile-carousel2"></div>
+                        <div class="col-xs-3 tile-carousel3"></div>
+                        <div class="col-xs-3 tile-carousel4"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-3 tile-carousel2"></div>
+                        <div class="col-xs-3 tile-carousel3"></div>
+                        <div class="col-xs-3 tile-carousel4"></div>
+                        <div class="col-xs-3 tile-carousel1"></div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-3 tile-carousel4"></div>
+                        <div class="col-xs-3 tile-carousel2"></div>
+                        <div class="col-xs-3 tile-carousel1"></div>
+                        <div class="col-xs-3 tile-carousel3"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        <script src="js/carousel.js"></script>
 </body>
 </html>
