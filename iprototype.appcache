@@ -6,12 +6,12 @@ css/bootstrap.css.map
 css/bootstrap.min.map
 css/bootstrap-theme.css
 css/bootstrap-theme.css.map
-css/bootstrap-theme.min.map
+# css/bootstrap-theme.min.map
 css/styles.css
-js/bootstrap.js
-js/bootstrap-min.js
-js/carousel.js
-js/voice.js
+# js/bootstrap.js
+# js/bootstrap-min.js
+# js/carousel.js
+# js/voice.js
 
 # Use from network if available
 NETWORK:
