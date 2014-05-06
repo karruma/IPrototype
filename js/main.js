@@ -48,6 +48,8 @@ define(function (require) {
         leafletMapManager.displayCountry(country);
     }
 
+//    shirtmanager.drawImage();
+
     jvectormapwrapper.initMap(callback);
 
 });
