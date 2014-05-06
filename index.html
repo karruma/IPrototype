@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>IECatch Prototype</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link href="css/tiles.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/map.css" rel="stylesheet">
+    <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"/>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" data-main="js/main" src="js/modules/external/require.js"></script>
 
-    <![endif]-->
 </head>
+
 <body>
 <div class="dashboard">
     <div class="row main-menu">
@@ -39,6 +39,7 @@
 
         </div>
     </div>
+
     <div class="row">
         <div id="myCarousel" class="carousel slide">
 
@@ -55,19 +56,19 @@
 
                 <div class="item">
                     <div class="row">
-                        <div class="col-xs-3 tile-carousel2"></div>
-                        <div class="col-xs-3 tile-carousel3"></div>
-                        <div class="col-xs-3 tile-carousel4"></div>
-                        <div class="col-xs-3 tile-carousel1"></div>
+                        <div class="col-xs-3 tile-carousel5"></div>
+                        <div class="col-xs-3 tile-carousel6"></div>
+                        <div class="col-xs-3 tile-carousel7"></div>
+                        <div class="col-xs-3 tile-carousel8"></div>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="row">
-                        <div class="col-xs-3 tile-carousel4"></div>
-                        <div class="col-xs-3 tile-carousel2"></div>
-                        <div class="col-xs-3 tile-carousel1"></div>
-                        <div class="col-xs-3 tile-carousel3"></div>
+                        <div class="col-xs-3 tile-carousel9"></div>
+                        <div class="col-xs-3 tile-carousel10"></div>
+                        <div class="col-xs-3 tile-carousel11"></div>
+                        <div class="col-xs-3 tile-carousel12"></div>
                     </div>
                 </div>
 
@@ -76,18 +77,14 @@
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
         </div>
-        </div>
-        <!--<div id="map"></div>-->
     </div>
 
-    <div id="map"></div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-    <script src="js/modules/carousel.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/modules/map.js"></script>
+
+    <div class="row">
+        <div id="world-map" class="col-md-6" style="width: 450px; height: 450px"></div>
+        <div id="map" class="col-md-6"></div>
+    </div>
+</div>
 </body>
+
 </html>

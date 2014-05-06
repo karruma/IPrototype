@@ -4,7 +4,6 @@ var bonds = [
     'Roger Moore',
     'Timothy Dalton',
     'Pierce Brosnan',
-    'Daniel Craig',
+    'Daniel Craig'
     //'Unknow yet actor'
-]
-
+];
