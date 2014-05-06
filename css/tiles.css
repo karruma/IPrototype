@@ -8,7 +8,7 @@ img {
 }
 
 .main-menu {
-    margin-top: 10em;
+    margin-top: 1em;
 }
 
 .wrapper {
@@ -285,33 +285,34 @@ img {
     transition: all .3s ease
 }
 
-.tile-carousel1 {
-    height: 230px;
-    width: 20%;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #56D9C9;
+.fadeOutback{
+    animation: fadeOutBack 0.3s ease-out 1 normal forwards;
 }
 
-.tile-carousel2 {
-    height: 230px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #d97615;
+.fadeOutback{
+    animation: fadeOutBack 0.3s ease-out 1 normal forwards;
+}
+.fadeInForward-1, .fadeInForward-2, .fadeInForward-3 {
+    /*remember: in the second animation u have to set the final values reached by the first one*/
+    opacity:0;
+    transform: translateZ(-5em) scale(0.75);
+    animation: fadeInForward .5s cubic-bezier(.03,.93,.43,.77) .4s normal forwards;
 }
 
-.tile-carousel3 {
-    height: 230px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #cbd96e;
+.fadeInForward-2{
+    animation-delay: .55s;
+}
+.fadeInForward-3{
+    animation-delay: .7s;
 }
 
-.tile-carousel4 {
-    height: 230px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #d99179;
+@keyframes fadeOutBack{
+    0% {transform: translateX(-2em) scale(1); opacity:1;}
+    70% {transform: translateZ(-5em) scale(0.6); opacity:0.5;}
+    95% {transform: translateZ(-5em) scale(0.6); opacity:0.5;}
+    100% {transform: translateZ(-5em) scale(0); opacity:0;}
 }
-
-#map { height: 180px; }
+@keyframes fadeInForward{
+    0% {transform: translateZ(-5em) scale(0); opacity:0;}
+    100% {transform: translateZ(0) scale(1); opacity:1;}
+}
